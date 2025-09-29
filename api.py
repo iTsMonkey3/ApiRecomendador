@@ -132,7 +132,11 @@ def health_check():
         "oob_accuracy": f"{model.oob_score_:.2f}" if hasattr(model, 'oob_score_') else "N/A"
     })
 
+
+
+
 # --- 6. Ejecución del Servidor ---
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    if not os.path.exist(app.config['UPLOAD_FOLDER']):
+        os.makedirs(app.config['UPLOAD_FOLDER'])
+    app.run(debug=True, host="0.0.0.0", port=os.getenv("PORT", default=5000))
