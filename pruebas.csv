@@ -12,7 +12,7 @@ Ganar_Musculo,Avanzado,5,88,Gym_Completo,26,Masculino,Push_Pull_Legs_Avanzado
 Perder_Grasa,Principiante,3,48,Mancuernas,24,Femenino,Arnold_Split
 Mantenerse,Intermedio,3,62,Mancuernas,39,Masculino,Acondicionamiento_Funcional
 Ganar_Musculo,Intermedio,5,75,Gym_Completo,30,Masculino,Rutina_Weider_Dividida
-Perder_Grasa,Principiante,4,50,Solo_Cuerpo,29,Femenino,Yoga_Fitness_Activo
+Perder_Grasa,Principiante,4,50,Solo_Cuerpo,29,Femenino,Rutina_descarga
 Ganar_Musculo,Principiante,3,55,Gym_Completo,19,Masculino,Powerlifting_Basico
 Mantenerse,Avanzado,4,70,Mancuernas,41,Masculino,Cross_Training_Moderado
 Perder_Grasa,Avanzado,5,50,Solo_Cuerpo,27,Masculino,Circuito_Quema_Grasa_en_Casa
@@ -33,7 +33,7 @@ Perder_Grasa,Intermedio,5,58,Gym_Completo,36,Masculino,HIIT_y_Fuerza_Gym
 Ganar_Musculo,Principiante,3,50,Gym_Completo,20,Femenino,Powerlifting_Basico
 Mantenerse,Principiante,4,45,Gym_Completo,55,Masculino,Mantenimiento_Activo_General
 Ganar_Musculo,Intermedio,4,78,Mancuernas,27,Masculino,Metodo_Bilbo
-Perder_Grasa,Avanzado,4,50,Solo_Cuerpo,30,Femenino,Yoga_Fitness_Activo
+Perder_Grasa,Avanzado,4,50,Solo_Cuerpo,30,Femenino,Rutina_descarga
 Mantenerse,Principiante,3,40,Mancuernas,43,Femenino,Flexibilidad_y_Movilidad
 Ganar_Musculo,Principiante,4,55,Solo_Cuerpo,18,Masculino,Full_Body_Hipertrofia_Basico
 Perder_Grasa,Intermedio,3,55,Solo_Cuerpo,28,Femenino,Circuito_Quema_Grasa_en_Casa
@@ -49,7 +49,7 @@ Perder_Grasa,Avanzado,5,55,Gym_Completo,38,Masculino,Cardio_y_Abs_Intenso
 Ganar_Musculo,Intermedio,4,70,Gym_Completo,31,Masculino,Torso_Pierna_Intermedio
 Mantenerse,Principiante,3,45,Solo_Cuerpo,58,Masculino,Flexibilidad_y_Movilidad
 Ganar_Musculo,Avanzado,5,82,Gym_Completo,27,Femenino,Push_Pull_Legs_Avanzado
-Perder_Grasa,Principiante,2,40,Solo_Cuerpo,22,Femenino,Yoga_Fitness_Activo
+Perder_Grasa,Principiante,2,40,Solo_Cuerpo,22,Femenino,Rutina_descarga
 Ganar_Musculo,Intermedio,5,75,Mancuernas,28,Masculino,Metodo_Bilbo
 Mantenerse,Intermedio,3,58,Gym_Completo,40,Masculino,Core_y_Estabilidad_Total
 Perder_Grasa,Intermedio,4,55,Solo_Cuerpo,33,Masculino,Circuito_Quema_Grasa_en_Casa
@@ -65,7 +65,7 @@ Ganar_Musculo,Principiante,3,55,Solo_Cuerpo,21,Femenino,Powerlifting_Basico
 Perder_Grasa,Intermedio,5,60,Mancuernas,30,Masculino,Arnold_Split
 Mantenerse,Principiante,2,38,Gym_Completo,51,Masculino,Mantenimiento_Activo_General
 Ganar_Musculo,Avanzado,6,88,Mancuernas,32,Masculino,Push_Pull_Legs_Avanzado
-Perder_Grasa,Avanzado,6,50,Solo_Cuerpo,29,Femenino,Yoga_Fitness_Activo
+Perder_Grasa,Avanzado,6,50,Solo_Cuerpo,29,Femenino,Rutina_descarga
 Mantenerse,Intermedio,5,70,Gym_Completo,41,Femenino,Core_y_Estabilidad_Total
 Ganar_Musculo,Intermedio,4,72,Mancuernas,28,Femenino,Torso_Pierna_Intermedio
 Perder_Grasa,Principiante,4,52,Solo_Cuerpo,24,Masculino,Circuito_Quema_Grasa_en_Casa
@@ -77,7 +77,7 @@ Mantenerse,Principiante,3,45,Mancuernas,53,Masculino,Flexibilidad_y_Movilidad
 Perder_Grasa,Avanzado,5,58,Mancuernas,33,Femenino,Arnold_Split
 Ganar_Musculo,Avanzado,5,80,Gym_Completo,25,Masculino,Push_Pull_Legs_Avanzado
 Mantenerse,Intermedio,3,60,Mancuernas,38,Femenino,Acondicionamiento_Funcional
-Perder_Grasa,Principiante,3,45,Solo_Cuerpo,26,Femenino,Yoga_Fitness_Activo
+Perder_Grasa,Principiante,3,45,Solo_Cuerpo,26,Femenino,Rutina_descarga
 Ganar_Musculo,Principiante,3,50,Mancuernas,22,Masculino,Powerlifting_Basico
 Mantenerse,Avanzado,5,75,Gym_Completo,50,Masculino,Cross_Training_Moderado
 Perder_Grasa,Intermedio,5,65,Gym_Completo,35,Femenino,HIIT_y_Fuerza_Gym
