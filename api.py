@@ -40,10 +40,7 @@ for column in categorical_cols:
 X = df_encoded.drop('Rutina', axis=1)
 y = df_encoded['Rutina']
 
-# --- ESTA LÓGICA AHORA FUNCIONARÁ CORRECTAMENTE ---
-# Con el nuevo dataset, la mayoría de las clases (rutinas) tendrán más de 1 miembro.
-# Este código es una salvaguarda: si alguna rutina AÚN ASÍ aparece solo una vez,
-# la eliminará para prevenir el error, pero ya no borrará todo el dataset.
+# Aqui se borrarán los registros que solo aparezcan 1 vez, para no dañar el algoritmo
 class_counts = y.value_counts()
 single_member_classes = class_counts[class_counts < 2].index
 
@@ -57,14 +54,13 @@ if not single_member_classes.empty:
     X = df_encoded.drop('Rutina', axis=1)
     y = df_encoded['Rutina']
 
-# Si después de filtrar no quedan datos, detenemos la ejecución.
+# En caso de que nos quedemos sin datos despues de filtrar se para
 if df_encoded.empty:
     print("❌ Error: Después de filtrar clases únicas, el dataset quedó vacío. No se puede continuar.")
     exit()
 
 # --- 3. División de Datos y Entrenamiento del Modelo ---
 
-# Ahora 'stratify=y' funcionará sin problemas.
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42, stratify=y
 )
@@ -81,7 +77,7 @@ print(f"📊 Precisión del modelo en el conjunto de prueba: {accuracy:.2f}")
 if hasattr(model, 'oob_score_'):
     print(f"📊 Precisión Out-of-Bag (OOB): {model.oob_score_:.2f}")
 
-# --- 5. Lógica de la API con Flask (Sin cambios aquí) ---
+# --- 5. Lógica de la API con Flask  ---
 
 app = Flask(__name__)
 CORS(app, resources={r"/predict": {"origins": "*"}})
@@ -132,10 +128,8 @@ def health_check():
         "oob_accuracy": f"{model.oob_score_:.2f}" if hasattr(model, 'oob_score_') else "N/A"
     })
 
-
-
-
 # --- 6. Ejecución del Servidor ---
+
 if __name__ == '__main__':
     if not os.path.exist(app.config['UPLOAD_FOLDER']):
         os.makedirs(app.config['UPLOAD_FOLDER'])
